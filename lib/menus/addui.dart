@@ -28,7 +28,7 @@ class _AddDocState extends State<AddDoc> {
       print(getDoctorYearOfExperience);
       final result=await DoctorApiService().SendDoctorData(getDoctorName,getDoctorId,getDoctorQualification,getDoctorSpecialisation,getDoctorYearOfExperience);
     if(result["status"]=="success"){
-      print("Successfully added");
+      print("Doctor added Successfully ");
     }else{
       print("Error occured");
     }
